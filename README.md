@@ -23,6 +23,7 @@ uv sync
 Or alternatively with pip:
 ```bash
 pip install -e .
+```
 
 ## Usage
 
@@ -71,7 +72,7 @@ python event_sender.py --api-key YOUR_HONEYCOMB_API_KEY --dataset my-custom-data
 ## Services Simulated
 
 - web-frontend
-- api-gateway  
+- api-gateway
 - user-service
 - order-service
 - payment-service
