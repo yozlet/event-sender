@@ -55,6 +55,15 @@ Specify a custom Honeycomb dataset:
 python event_sender.py --api-key YOUR_HONEYCOMB_API_KEY --dataset my-custom-dataset
 ```
 
+### Debugging: Save Event Batches Locally
+
+Save event batches as JSON files for debugging (useful if events aren't appearing in Honeycomb):
+```bash
+python event_sender.py --api-key YOUR_HONEYCOMB_API_KEY --save-batches ./debug_batches
+```
+
+This will create a directory with numbered JSON files (`batch_00001.json`, `batch_00002.json`, etc.) containing the exact payloads being sent to Honeycomb.
+
 ## Metrics Generated
 
 - **HTTP Request Duration** - Histogram of request response times

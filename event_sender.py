@@ -13,7 +13,7 @@ from typing import Dict
 
 try:
     from dotenv import load_dotenv
-    load_dotenv()  # Load environment variables from .env file
+    _ = load_dotenv()  # Load environment variables from .env file
 except ImportError:
     pass  # dotenv is optional - continue without it
 
