@@ -1,6 +1,6 @@
 # Event Sender for Honeycomb
 
-A Python script that generates realistic web application events and sends them to Honeycomb with proper historical timestamps.
+A Python script that generates a large chunk of realistic web application events and sends them to Honeycomb with proper historical timestamps. Use this when you need to backfill multiple weeks of historical data in short order.
 
 ## Features
 
@@ -29,10 +29,12 @@ pip install -e .
 
 ### Historical Data Generation (Default)
 
-Generate 35 days of historical metrics:
+Generate 35 days (the default amount) of historical metrics:
 ```bash
 python event_sender.py --api-key YOUR_HONEYCOMB_API_KEY
 ```
+
+**NOTE:** You can use a `.env` file to store your API key instead of passing it as a command-line argument. However, ensure the `.env` file is in the same directory as `event_sender.py`.
 
 Generate custom time range:
 ```bash
